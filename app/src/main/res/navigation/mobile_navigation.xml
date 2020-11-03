@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.main.bcg.ui.Dashborad"
+        android:label="Dashboard"
+        tools:layout="@layout/dashboard" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.main.bcg.ui.My_wallet"
+        android:label="My Wallet"
+        tools:layout="@layout/my_wallet" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.main.bcg.ui.Account_setting"
+        android:label="Account Setting"
+        tools:layout="@layout/account_setting" />
+    <fragment
+        android:id="@+id/FAQ_Fragment"
+        android:name="com.main.bcg.FAQ_Fragment"
+        android:label="FAQ"
+        tools:layout="@layout/fragment_f_a_q_" />
+    <fragment
+        android:id="@+id/histroyFragment"
+        android:name="com.main.bcg.HistroyFragment"
+        android:label="Histroy"
+        tools:layout="@layout/fragment_histroy" />
+    <fragment
+        android:id="@+id/transferfragment"
+        android:name="com.main.bcg.Transferfragment"
+        android:label="Transfer"
+        tools:layout="@layout/fragment_transferfragment" />
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="com.main.bcg.SupportFragment"
+        android:label="Support"
+        tools:layout="@layout/fragment_support" />
+    <fragment
+        android:id="@+id/airdropBCG"
+        android:name="com.main.bcg.AirdropBCG"
+        android:label="Airdrop BCG"
+        tools:layout="@layout/fragment_airdrop_b_c_g" />
+</navigation>

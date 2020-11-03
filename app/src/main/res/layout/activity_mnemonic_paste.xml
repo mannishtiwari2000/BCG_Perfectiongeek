@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B082F"
+    tools:context=".Mnemonic_paste">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="471dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="70dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        app:srcCompat="@drawable/stipe"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:gravity="center"
+        android:fontFamily="@font/lato"
+        android:text="I Don't Have an Account"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:fontFamily="@font/lato"
+        android:text="Login"
+        android:textColor="#CD9E07"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="413dp"
+        android:layout_height="445dp"
+        android:background="#0B082F"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <Button
+            android:id="@+id/Mnemonic_paste"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonshape"
+            android:text="Continue"
+            android:fontFamily="@font/lato"
+            android:textColor="#FFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTextPostalAddress3"
+            android:layout_width="348dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittext_corner"
+            android:backgroundTint="#08062B"
+            android:ems="10"
+            android:hint="Please copy the Mnemonic "
+            android:inputType="textPostalAddress"
+            android:maxLines="5"
+            android:textColor="#3b3a4b"
+            android:textColorHint="#3b3a4b"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/G"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:background="@drawable/text_view_border"
+            android:text="QWER"
+            android:textColor="#FFF"
+            app:layout_constraintBottom_toTopOf="@+id/Continue1"
+            app:layout_constraintEnd_toStartOf="@+id/E"
+            app:layout_constraintHorizontal_bias="0.142"
+            app:layout_constraintStart_toEndOf="@+id/F"
+            app:layout_constraintTop_toBottomOf="@+id/C"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/a2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/text_view_border"
+            android:text="HFDA"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/a" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="MNEMONIC"
+            android:textColor="#CD9E07"
+            android:textSize="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.003"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="1dp"
+            android:text="Copy the Text"
+            android:fontFamily="@font/lato"
+            android:textColor="#C9C9C9"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/text_view_border"
+            android:text="QWER"
+            android:textColor="#FFF"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress3" />
+
+        <TextView
+            android:id="@+id/B"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/text_view_border"
+            android:text="TYUI"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            app:layout_constraintStart_toEndOf="@+id/a"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress3" />
+
+        <TextView
+            android:id="@+id/F"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="32dp"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/text_view_border"
+            android:text="FSA"
+            android:textColor="#FFF"
+            app:layout_constraintStart_toEndOf="@+id/a2"
+            app:layout_constraintTop_toBottomOf="@+id/B" />
+
+        <TextView
+            android:id="@+id/C"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/text_view_border"
+            android:text="WAS"
+            android:textColor="#FFF"
+            app:layout_constraintStart_toEndOf="@+id/B"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress3" />
+
+        <TextView
+            android:id="@+id/D"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/text_view_border"
+            android:text="ASDD"
+            android:textColor="#FFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.032"
+            app:layout_constraintStart_toEndOf="@+id/C"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress3" />
+
+        <TextView
+            android:id="@+id/E"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="40dp"
+            android:textSize="18dp"
+            android:background="@drawable/text_view_border"
+            android:text="WEW"
+            android:textColor="#FFF"
+            app:layout_constraintBottom_toTopOf="@+id/Continue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.021"
+            app:layout_constraintStart_toEndOf="@+id/C"
+            app:layout_constraintTop_toBottomOf="@+id/D"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

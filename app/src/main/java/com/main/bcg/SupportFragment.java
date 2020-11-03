@@ -1,5 +1,7 @@
 package com.main.bcg;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class SupportFragment extends Fragment {
@@ -20,7 +24,10 @@ Button btn_create;
         btn_create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(),"Please Add ticket",Toast.LENGTH_SHORT).show();
+                final Dialog openDialog = new Dialog(getContext());
+                openDialog.setContentView(R.layout.createticket);
+                openDialog.setTitle("Custom Dialog Box");
+               openDialog.show();
             }
         });
         return root;

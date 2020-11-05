@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.main.bcg.MyAdapter;
+import com.main.bcg.Recycler_Adapter.MyAdapter;
 import com.main.bcg.R;
 
 public class My_wallet extends Fragment {

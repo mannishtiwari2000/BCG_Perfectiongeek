@@ -22,7 +22,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="403dp"
+        android:layout_width="match_parent"
         android:layout_height="374dp"
         android:background="#0B082F"
         android:padding="20dp"
@@ -80,7 +80,6 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
             android:text="Copy the Text"
             android:fontFamily="@font/lato"
             android:textColor="#C9C9C9"

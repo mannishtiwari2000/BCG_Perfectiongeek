@@ -1,5 +1,6 @@
 package com.main.bcg;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.main.bcg.Recycler_Adapter.MyAdapter;
 import com.main.bcg.Recycler_Adapter.MyAdapter_history;
@@ -20,7 +22,7 @@ public class HistroyFragment extends Fragment {
     RecyclerView recyclerView,recyclerView_return,recyclerView_investment;
     RecyclerView.LayoutManager RecyclerViewLayoutManager, RecyclerViewLayoutManager_return,RecyclerViewLayoutManager_investment;
     LinearLayoutManager HorizontalLayout, HorizontalLayout_return,HorizontalLayout_investment;
-
+ TextView more_transaction,more_imt,more_project;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -28,7 +30,6 @@ public class HistroyFragment extends Fragment {
         recyclerView = root.findViewById(R.id.transaction_Recycler);
         RecyclerViewLayoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(RecyclerViewLayoutManager);//set The layout
-
         HorizontalLayout = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(HorizontalLayout);
         String[] programming={"C","C++","JAVA","VB.NET","ANDROID STUDIO","C","C++","JAVA","VB.NET","ANDROID STUDIO"};
@@ -66,6 +67,31 @@ public class HistroyFragment extends Fragment {
         HorizontalLayout_investment =new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false);
         recyclerView_investment.setLayoutManager(HorizontalLayout_investment);
         recyclerView_investment.setAdapter(new MyAdapter_history(programmingB));
+        more_transaction=root.findViewById(R.id.More_transaction);
+        more_imt=root.findViewById(R.id.more_imt_Retrn);
+        more_project=root.findViewById(R.id.Project_More);
+
+        more_project.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(),Project_Investing.class);
+                startActivity(i);
+            }
+        });
+        more_imt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(),Imt_return_more.class);
+                startActivity(i);
+            }
+        });
+        more_transaction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(),transaction_more.class);
+                startActivity(i);
+            }
+        });
         return root;
     }
 }

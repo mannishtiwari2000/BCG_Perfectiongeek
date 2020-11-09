@@ -33,7 +33,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/More_transaction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato"
@@ -89,7 +89,7 @@
             app:layout_constraintVertical_bias="1.0" />
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/more_imt_Retrn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -150,7 +150,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/Project_More"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="More"

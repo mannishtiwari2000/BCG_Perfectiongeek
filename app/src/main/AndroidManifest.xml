@@ -10,14 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Transaction_pin"
+            android:name=".Project_Investing"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Imt_return_more"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".transaction_more"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Transaction_pin"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Mnemonic_paste"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Mnemonic"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".dashboard"
             android:label="@string/title_activity_dashboard"

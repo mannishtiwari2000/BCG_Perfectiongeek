@@ -16,12 +16,12 @@ import com.main.bcg.R;
 public class My_wallet extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
-            ViewGroup container, Bundle savedInstanceState) {
+                             ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.my_wallet, container, false);
 
-        RecyclerView recyclerView =root.findViewById(R.id.recycler_wallet);
+        RecyclerView recyclerView = root.findViewById(R.id.recycler_wallet);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        String[] programming={"C","C++","JAVA","VB.NET","ANDROID STUDIO","C","C++","JAVA","VB.NET","ANDROID STUDIO"};
+        String[] programming = {"C", "C++", "JAVA", "VB.NET", "ANDROID STUDIO", "C", "C++", "JAVA", "VB.NET", "ANDROID STUDIO"};
         recyclerView.setAdapter(new MyAdapter(programming));
         return root;
     }

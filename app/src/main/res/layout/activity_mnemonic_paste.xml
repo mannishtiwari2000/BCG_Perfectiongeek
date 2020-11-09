@@ -54,7 +54,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="413dp"
+        android:layout_width="match_parent"
         android:layout_height="445dp"
         android:background="#0B082F"
         android:padding="20dp"
@@ -80,7 +80,7 @@
 
         <EditText
             android:id="@+id/editTextTextPostalAddress3"
-            android:layout_width="348dp"
+            android:layout_width="match_parent"
             android:layout_height="77dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/edittext_corner"
@@ -145,7 +145,6 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
-            android:layout_marginTop="1dp"
             android:text="Copy the Text"
             android:fontFamily="@font/lato"
             android:textColor="#C9C9C9"
@@ -157,7 +156,7 @@
 
         <TextView
             android:id="@+id/a"
-            android:layout_width="60dp"
+            android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_marginStart="15dp"
             android:layout_marginLeft="10dp"
@@ -233,17 +232,16 @@
             android:layout_height="30dp"
             android:layout_marginStart="15dp"
             android:layout_marginLeft="15dp"
-            android:layout_marginBottom="40dp"
-            android:textSize="18dp"
             android:background="@drawable/text_view_border"
             android:text="WEW"
             android:textColor="#FFF"
-            app:layout_constraintBottom_toTopOf="@+id/Continue1"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/Mnemonic_paste"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.021"
+            app:layout_constraintHorizontal_bias="0.024"
             app:layout_constraintStart_toEndOf="@+id/C"
             app:layout_constraintTop_toBottomOf="@+id/D"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.333" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
